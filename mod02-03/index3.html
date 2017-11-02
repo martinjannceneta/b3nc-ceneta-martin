@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
 	<title>HTML DOM Activity # 3</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-		<header>
-			<h3 align="center">TUITT CODING BOOTCAMP</h3>
-		</header>
-		<hr>
-		<div style="float: left"><img src="img/home.png" height="25px" width="25px"></div>
-		<div style="float: right"><h1 align="left">Dashboard</h1></div>
-		<div style="clear: both"/></div>
-		<div>
-			<img src="img/post1.png" height="25px" width="25px">
-			<h2>5 posts</h2>
-		</div>
-		<div>
-			<img src="img/image4.jpg" height="25px" width="25px">
-			<h2>5 posts</h2>
-		</div>
-		<div>
-			<img src="img/newpost.png" height="40px" width="40px">
-			<h2>New Post</h2>
-			<form action="" method="">
-				<textarea rows="2" cols="70">Enter your post title here</textarea>
-			</form>
-			<form action="" method="">
-				<textarea rows="6" cols="70" name="comment" id="comment" value="Submit">Enter post content here...</textarea>
-			</form>
-			<form action="" method="">
-			<input type="submit" name="submit">
-			</form>
-		</div>
 
-		<img src="img/upload.png" height="25px" width="25px">
-		<h2>Upload Image</h2>
+	<header>
+		<h1 align="center">TUITT CODING BOOTCAMP</h1>
+	</header>
+		
+	<main>
+		<!-- dashboard -->
+		<div>
+			<h3><i class="fa fa-home" aria-hidden="true"> Dashboard</i></h3>
+			<div>
+				<i class="fa fa-file" aria-hidden="true"></i>
+				<p>5</p>
+				<p>Posts</p>
+			</div>
+			<div>
+				<i class="fa fa-image" aria-hidden="true"></i>
+				<p>13</p>
+				<p>Images</p>
+			</div>
+		</div>	
+		
+		<!-- new post -->
+		<div>
+			<h3><i class="fa fa-plus-circle" aria-hidden="true"></i> New Post</h3>
+
+			<form action="" method="">
+				<input type="text" name="" placeholder="Enter your post title">
+				<textarea placeholder="Enter post content here"></textarea>
+				<input type="submit" name="" value="Publish">
+			</form>
+
+		</div>	
+		
+		<!-- upload image -->
+		<div>
+			<h3><i class="fa fa-cloud-upload" aria-hidden="true"> Upload Image</i></h3>
+
+			<ul>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/300/300" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/300/300">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/300/300">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/300/300">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/300/300">
+					</a>
+				</li>
+			</ul>
+
+			<form action="" method="">
+				<input type="file" name="" hidden>
+				<button type="button">Browse</button>
+				<button type="submit">Upload</button>
+			</form>
+		</div>	
+
+	</main>
+
+	<footer>
+		<p>Tuitt Coding Bootcamp &copy 2017</p>
+	</footer>	
 </body>
 </html>
